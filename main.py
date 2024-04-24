@@ -11,14 +11,12 @@ print(arr.bisect_right(3), arr[arr.bisect_right(3)])
 # mean to insert the element at index
 # to the right most so that we keep the arr sorted.
 
-# for example, this is returning index 5, at index 5 we have 4, we want 
+# for example, this is returning index 5, at index 5 we have 5, we want 
 # to put the value at index 4 and move everything by one index.
 
 print(arr.bisect_left(3),arr[arr.bisect_left(3)])
 # for example, this is returning index 2, at index 2 we have 3, we want 
 # to put the value at index 4 and move everything by one index.
-# note: the value is the same as the value on index
-# this make sense as we adding at the very start of the sub arr
 
 # simplification
 # If we want to insert a value already present in the arr
@@ -44,13 +42,11 @@ print(arr.bisect_left(0),arr[arr.bisect_left(0)])
 # it will return zero which the same for the following
 print(arr.bisect_left(1),arr[arr.bisect_left(1)])
 
-# What happen if the value is less than everything
+# What happen if the value is more than everything
 
 print(arr.bisect_right(7), "arr[arr.bisect_right(7)]") 
 
 print(arr.bisect_left(7),"arr[arr.bisect_left(7)]")
 
-# it will return zero which the same for the following
+# it will return length of the array which the same for the following
 print(arr.bisect_right(6),"arr[arr.bisect_right(6)]")
-
-# An example I used bisect_right to find the right most insertion index to find the 
